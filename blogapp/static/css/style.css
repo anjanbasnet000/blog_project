@@ -1,0 +1,386 @@
+
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --eff : .3s all ease;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --bg-g: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+     background-blend-mode: multiply,multiply;
+
+    /*      theme font-family   */
+    --Abel: 'Abel';
+    --Anton: 'Anton';
+    --Josefin : 'Josefin';
+    --Lexend: 'Lexend';
+    --Livvic : 'Livvic';
+}
+
+
+/* ---------------- Global Classes ---------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Anton);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border-radius: 2rem;
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Lexend);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Abel);
+    color: var(--text-light);
+    font-size: 1rem;
+    
+}
+
+
+figure img, .fab, .fas{
+    transition: var(--eff);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: hsl(84%, 3%, 94%);
+}
+
+/* profile */
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+
+/* start navigation */ 
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 .5rem;
+     display: block;
+    font-family: var(--Anton);
+    font-size: 1.6rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 10rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--Abel);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--bg-color);
+    font-size: 1rem;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--bg-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--text-light);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.show_comments{
+    margin: 20px 0;
+    transition: var(--eff);
+    display: block;
+}
+
+ .post-info span{
+    margin: 0 .5rem;
+}
+
+/* end navigation */ 
+ 
+
+/* Blog Section */ 
+
+.blog_left__div h1{
+    font-family: var(--Anton);
+}
+
+.blog_left__div p{
+    color: var(--bg-color);
+}
+
+.left_div__reply {
+    color:var(--bg-g);
+    border-width: .2rem;
+    transition: var(--eff);
+    padding: .5rem 1rem;
+    background-color:var(grey);
+    border: none;
+    
+}
+
+.left_div__like {
+    color:var(--bg-g);
+    border-width: .2rem;
+    transition: var(--eff);
+    padding: .5rem 1rem;
+    background-color:grey;
+    border: none;
+    
+}
+
+.left_div__reply:hover,
+.left_div__reply:hover{
+    transition: (0.5rem);
+    box-shadow: 0 1rem 3rem --1rem rgba(255,255,255,0.7);
+}
+
+.replies {
+    margin: .2rem 0;
+    padding: 1rem;
+    transition: var(--eff);
+    display: none;
+}
+
+
+
+
+/* Blog Section */ 
+
+/* sidebar-category */ 
+.sidebar .category-list{
+    font-family: var(--Livvic);
+}
+
+.sidebar .category-list .list-items{
+    background : var(--sky);
+    padding: .4rem 1rem;
+    margin:  .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar .category-list .list-items a{
+    color: var(--bg-color);
+}
+
+
+.sidebar .popular-post .post-content{
+    padding: 1rem 0;
+}
+
+.sidebar .popular-post h2{
+    padding-top: 8rem;
+}
+
+.sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+
+.sidebar .popular-post .post-title a{
+    font-size: 1rem;
+}
+
+.sidebar .newsletter{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.sidebar .newsletter .form-element{
+    padding: .5rem 2rem;
+}
+
+.sidebar .newsletter .input-element{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    font-family: var(--Lexend);
+    font-size: 1rem;
+}
+
+.sidebar .newsletter .form-btn{
+    border-radius: 0;
+    padding: .8rem 10%;
+    margin: 1rem 0;
+    background: var(--sky);
+}
+
+.sidebar .popular-tags{
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+}
+
+.sidebar .popular-tags .tags .tag{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+}
+
+/*------------------Sidebar--------------------*/ 
+
+/* sidebar-category */ 
+
+
+/* Footer Area */ 
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+/* End Footer */ 

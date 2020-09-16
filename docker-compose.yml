@@ -8,3 +8,27 @@ services:
       - .:/blog_project
     ports:
        - 8000:8000
+    depends_on:
+      - db
+  db:
+    image: postgres:12
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+ 
+    environment:
+        POSTGRES_HOST_AUTH_METHOD: "trust"
+  smtp:
+    image: namshi/smtp
+    container_name: smtp_relay
+    restart: always
+    ports:
+     - "25:25"
+    
+
+volumes: 
+  postgres_data:
+
+
+
+
+    
